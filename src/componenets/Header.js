@@ -71,7 +71,7 @@ const Header = () => {
                         {
                             links.map(
                                 (link, index) => {
-                              return  <li className="flex items-center gap-1 hover:text-orange-500">
+                              return  <li key={index} className="flex items-center gap-1 hover:text-orange-500 cursor-pointer">
                                     {link.icon}
                                     {link.name}
                                 </li>
